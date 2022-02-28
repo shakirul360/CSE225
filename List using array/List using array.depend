@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1645394979 source:d:\nsu\spring 22\cse225l\list using array\main.cpp
+	<iostream>
+	"unsortedtype.h"
+	"sortedtype.h"
+
+1645392964 source:d:\nsu\spring 22\cse225l\list using array\src\sortedtype.cpp
+
+1645394995 d:\nsu\spring 22\cse225l\list using array\include\sortedtype.h
+
+1645304698 source:d:\nsu\spring 22\cse225l\list using array\src\unsortedtype.cpp
+
+1645305456 d:\nsu\spring 22\cse225l\list using array\include\unsortedtype.h
+

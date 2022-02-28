@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1646057405 source:d:\nsu\spring 22\cse225l\slinkedlist\main.cpp
+	<iostream>
+	<SLinkedList.h>
+
+1646052320 source:d:\nsu\spring 22\cse225l\slinkedlist\src\slinkedlist.cpp
+
+1646057558 d:\nsu\spring 22\cse225l\slinkedlist\include\slinkedlist.h
+	<iostream>
+

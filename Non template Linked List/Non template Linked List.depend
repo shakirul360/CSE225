@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1646074860 source:d:\nsu\spring 22\cse225l\non template linked list\main.cpp
+	<iostream>
+	<Linked_List.h>
+
+1646074846 source:d:\nsu\spring 22\cse225l\non template linked list\src\linked_list.cpp
+	"Linked_List.h"
+	<iostream>
+
+1646074846 d:\nsu\spring 22\cse225l\non template linked list\include\linked_list.h
+	<iostream>
+

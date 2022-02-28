@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1645212861 source:d:\nsu\spring 22\cse225l\dyn_arr\main.cpp
+	<iostream>
+	"Dyn_Arr.h"
+
+1645212715 source:d:\nsu\spring 22\cse225l\dyn_arr\src\dyn_arr.cpp
+	"Dyn_Arr.h"
+	<iostream>
+
+1645212753 d:\nsu\spring 22\cse225l\dyn_arr\include\dyn_arr.h
+

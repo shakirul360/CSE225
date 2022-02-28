@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1645657818 source:d:\nsu\spring 22\cse225l\complex_op_overload\main.cpp
+	<iostream>
+	"complex.h"
+
+1645657849 source:d:\nsu\spring 22\cse225l\complex_op_overload\src\complex.cpp
+	"complex.h"
+	<iostream>
+
+1645657548 d:\nsu\spring 22\cse225l\complex_op_overload\include\complex.h
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1644673780 source:d:\nsu\spring 22\cse225l\prac_class\main.cpp
+	<iostream>
+	"DynArr.h"
+
+1644673071 source:d:\nsu\spring 22\cse225l\prac_class\src\dynarr.cpp
+	"DynArr.h"
+	<iostream>
+
+1644673635 d:\nsu\spring 22\cse225l\prac_class\include\dynarr.h
+
+1644673853 source:d:\nsu\spring 22\cse225l\prac_class\src\main.cpp
+	<iostream>
+	"DynArr.h"
+
