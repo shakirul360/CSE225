@@ -7,7 +7,7 @@ using namespace std;
 class StudentInfo
 {
     public:
-        StudentInfo(int id, double gpa, string Name);
+        StudentInfo(int id, string Name, double gpa);
 
     private:
         int id;
