@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1646507955 source:d:\nsu\spring 22\cse225l\unsorted_list\main.cpp
+	<iostream>
+	"Unsorted_List.h"
+
+1646504777 source:d:\nsu\spring 22\cse225l\unsorted_list\src\unsorted_list.cpp
+
+1646507666 d:\nsu\spring 22\cse225l\unsorted_list\include\unsorted_list.h
+	<iostream>
+
