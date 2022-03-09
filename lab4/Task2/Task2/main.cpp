@@ -36,6 +36,10 @@ int main(){
 
     ut.print_list();
 
+    int x = 5;
+    delete x;
+    cout << x << endl;
+
 
     cout << "Hello world!" << endl;
     return 0;

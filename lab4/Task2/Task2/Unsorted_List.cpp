@@ -97,7 +97,7 @@ template <class T>
 void Unsorted_List<T>::print_list(){
 
     for (int i = 0; i < length; i++){
-
+        // use get_next_item instead of 3 getters
         cout << items[i].get_id() << "\t" << items[i].get_name() << "\t" << items[i].get_gpa() << endl;
 
     }

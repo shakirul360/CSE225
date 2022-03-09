@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1645272486 source:c:\users\rajesh palit\my drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\main.cpp
+	<iostream>
+	"DoublyLinkedListType.h"
+
+1645271797 source:c:\users\rajesh palit\my drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\doublylinkedlisttype.cpp
+	"DoublyLinkedListType.h"
+
+1645272730 c:\users\rajesh palit\my drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\doublylinkedlisttype.h
+	<iostream>
+
+1645414441 source:c:\users\rajesh\google drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\doublylinkedlisttype.cpp
+	<iostream>
+	"DoublyLinkedListType.h"
+
+1645414589 c:\users\rajesh\google drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\doublylinkedlisttype.h
+
+1645414652 source:c:\users\rajesh\google drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\main.cpp
+	<iostream>
+	"DoublyLinkedListType.cpp"
+
+1645414441 c:\users\rajesh\google drive\course slides\cse-225-slides-rjp\slides\practice\doublylinkedlist\doublylinkedlisttype.cpp
+	<iostream>
+	"DoublyLinkedListType.h"
+
+1645414441 source:d:\nsu\spring 22\cse225l\doublylinkedlist\doublylinkedlisttype.cpp
+	<iostream>
+	"DoublyLinkedListType.h"
+
+1645414589 d:\nsu\spring 22\cse225l\doublylinkedlist\doublylinkedlisttype.h
+
+1646761279 source:d:\nsu\spring 22\cse225l\doublylinkedlist\main.cpp
+	<iostream>
+	"DoublyLinkedListType.cpp"
+
+1645414441 d:\nsu\spring 22\cse225l\doublylinkedlist\doublylinkedlisttype.cpp
+	<iostream>
+	"DoublyLinkedListType.h"
+
