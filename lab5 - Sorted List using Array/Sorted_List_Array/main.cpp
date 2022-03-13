@@ -9,12 +9,13 @@ int main() {
 
     Sorted_List_arr<int> l;
 
-    l.insert_item(4);
-    l.insert_item(5);
+
     l.insert_item(3);
     l.insert_item(1);
     l.insert_item(2);
     l.insert_item(0);
+    l.insert_item(4);
+    l.insert_item(5);
     print_list(l);
     //cout << l.length_is() << endl;
 

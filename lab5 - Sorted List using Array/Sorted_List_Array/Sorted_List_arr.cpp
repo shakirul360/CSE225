@@ -34,15 +34,14 @@ template <class T>
 void Sorted_List_arr<T>::insert_item(T item){
     //cout << "adding = " << item << endl;
 
-    int pos = 0;
+    int pos;
 
     if (is_full()){
         return;
     } else {
 
-        for (int i = 0; i < length; i++){
-            if (items[i] > item){
-                pos = i;
+        for (pos = 0; pos < length; pos++){
+            if (items[pos] > item){
                 break;
             }
         }
