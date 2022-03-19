@@ -1,16 +1,15 @@
 # depslib dependency file v1.0
-1646507955 source:d:\nsu\spring 22\cse225l\unsorted_list\main.cpp
+1647680447 source:d:\nsu\spring 22\cse225l\4 - unsorted list using array\unsorted_list\main.cpp
 	<iostream>
+	"Unsorted_List.cpp"
+
+1647680235 source:d:\nsu\spring 22\cse225l\4 - unsorted list using array\unsorted_list\unsorted_list.cpp
 	"Unsorted_List.h"
-
-1646504777 source:d:\nsu\spring 22\cse225l\unsorted_list\src\unsorted_list.cpp
-
-1646507666 d:\nsu\spring 22\cse225l\unsorted_list\include\unsorted_list.h
 	<iostream>
 
-1646587388 source:d:\nsu\spring 22\cse225l\unsorted_list\src\studentinfo.cpp
-	"StudentInfo.h"
+1647679530 d:\nsu\spring 22\cse225l\4 - unsorted list using array\unsorted_list\unsorted_list.h
 
-1646587388 d:\nsu\spring 22\cse225l\unsorted_list\include\studentinfo.h
+1647680235 d:\nsu\spring 22\cse225l\4 - unsorted list using array\unsorted_list\unsorted_list.cpp
+	"Unsorted_List.h"
 	<iostream>
 

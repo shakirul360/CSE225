@@ -1,41 +1,56 @@
 #include <iostream>
-#include "Unsorted_List.h"
-#include "StudentInfo.h"
+#include "Unsorted_List.cpp"
 
 using namespace std;
 
-int main() {
-    //Unsorted_List<StudentInfo> lis;
-    StudentInfo s1(15234, "Jon", 2.6);
-    StudentInfo s2(13732, "Tyrion", 3.9);
-    StudentInfo s3(13569, "Sandor", 1.2);
-    StudentInfo s4(15467, "Ramsey", 3.1);
-    StudentInfo s5(16185, "Arya", 3.1);
+void PrintList(Unsorted_List<int> u);
 
-    Unsorted_List<StudentInfo> l;
+int main(){
+
+    Unsorted_List<int> l;
+
+    //cout << l.length_is();
+
+    l.insert_item(5);
+    l.insert_item(7);
+    l.insert_item(6);
+    l.insert_item(9);
 
 
+    PrintList(l);
+    cout << l.length_is()<< endl;
+    l.insert_item(1);
+    PrintList(l);
+
+    int a = 9;
+
+    bool flag = false;
+
+    l.retrieve_item(a, flag);
+
+    cout << flag << endl;
+
+    cout << l.is_full() << endl;
+
+    l.delete_item(5);
+    l.delete_item(6);
+    l.delete_item(1);
+
+    PrintList(l);
 
     cout << "Hello world!" << endl;
     return 0;
 }
 
-//    Unsorted_List<int> li;
-//
-//    li.insert_item(5);
-//    li.insert_item(7);
-//    li.insert_item(6);
-//    li.insert_item(9);
-//    li.insert_item(1);
-//    li.print_list();
-//    cout << "length = " << li.lengthis() << endl;
-//    int a = 5;
-//    bool flag = false;
-//    li.retrieve_item(a, flag);
-//    cout << flag << endl;
-//
-//    cout << li.is_full() << endl;
-//    li.delete_item(5);
-//    cout << li.is_full() << endl;
-//    li.delete_item(1);
-//    li.print_list();
+
+void PrintList(Unsorted_List<int> u)
+{
+    int temp;
+    for(int i = 0 ; i<u.length_is();i++)
+    {
+        u.get_next_item(temp);
+        cout<<temp<< "\t";
+    }
+    cout << endl;
+    u.reset_list();
+}
