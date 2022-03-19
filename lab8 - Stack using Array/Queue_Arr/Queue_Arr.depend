@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1584205420 source:d:\nsu\spring 22\cse225l\lab8 - stack using array\queue_arr\main.cpp
+	<iostream>
+
+1647411084 source:d:\nsu\spring 22\cse225l\lab8 - stack using array\queue_arr\queue.cpp
+	"Queue.h"
+
+1647410875 d:\nsu\spring 22\cse225l\lab8 - stack using array\queue_arr\queue.h
+
