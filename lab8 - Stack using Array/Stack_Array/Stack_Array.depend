@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1647191364 source:d:\nsu\spring 22\cse225l\lab8 - stack using array\stack_array\main.cpp
+1647192504 source:d:\nsu\spring 22\cse225l\lab8 - stack using array\stack_array\main.cpp
 	<iostream>
 	"Stack_arr.cpp"
 
@@ -9,7 +9,7 @@
 
 1647191433 d:\nsu\spring 22\cse225l\lab8 - stack using array\stack_array\stack_arr.h
 
-1647191377 d:\nsu\spring 22\cse225l\lab8 - stack using array\stack_array\stack_arr.cpp
+1647191433 d:\nsu\spring 22\cse225l\lab8 - stack using array\stack_array\stack_arr.cpp
 	"Stack_arr.h"
 	<iostream>
 
