@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1584205420 source:d:\nsu\spring 22\cse225l\queue_rev\main.cpp
+	<iostream>
+
+1647852422 source:d:\nsu\spring 22\cse225l\queue_rev\queue.cpp
+	"Queue.h"
+
+1647852422 d:\nsu\spring 22\cse225l\queue_rev\queue.h
+
+1647852503 source:d:\nsu\spring 22\cse225l\queue_rev\stack_arr.cpp
+	"Stack_arr.h"
+	<iostream>
+
+1647852529 d:\nsu\spring 22\cse225l\queue_rev\stack_arr.h
+

@@ -1,0 +1,10 @@
+stack - 1 2 3 4 5
+printing - 5 4 3 2 1
+
+
+queue - 1 2 3 4 5
+stack - 1 2 3 4 5
+either - queue - 5 4 3 2 1
+or print - 5 4 3 2 1 
+
+

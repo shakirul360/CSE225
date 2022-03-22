@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1645869147 source:d:\nsu\spring 22\cse225l\stack_queue\main.cpp
+1645869185 source:d:\nsu\spring 22\cse225l\stack_queue\main.cpp
 	<iostream>
 	"stacktype.h"
 	"queuetype.h"

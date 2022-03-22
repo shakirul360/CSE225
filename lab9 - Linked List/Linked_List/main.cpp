@@ -11,7 +11,16 @@ int main() {
     l.insert_at_first(2);
     l.insert_at_first(3);
     l.insert_at_last(0);
+    l.print_list();
 
+    l.delete_last();
+    l.print_list();
+    l.insert_at_last(0);
+
+    l.delete_first();
+    l.print_list();
+
+    l.insert_at_first(3);
     l.print_list();
     cout << "Hello world!" << endl;
     return 0;

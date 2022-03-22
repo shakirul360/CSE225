@@ -16,6 +16,8 @@ class Linked_List
         void insert_at_first(int item);
         void insert_at_last(int item);
         void print_list();
+        void delete_first();
+        void delete_last();
 
     private:
         node *head;

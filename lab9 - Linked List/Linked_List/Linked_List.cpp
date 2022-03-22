@@ -60,3 +60,32 @@ void Linked_List::print_list(){
     cout << endl;
 }
 
+void Linked_List::delete_first(){
+
+    if (head == NULL){
+        cout << "Empty List!" << endl;
+        return;
+    } else {
+        node *temp = head;
+        head = head->next;
+        delete temp;
+    }
+
+}
+
+void Linked_List::delete_last(){
+    if (head == NULL){
+        cout << " Empty List!" << endl;
+        return;
+    } else {
+
+        node *pos = head;
+        while (pos->next->next != NULL){
+            pos = pos->next;
+        }
+
+        node *temp = pos->next;
+        pos->next = NULL;
+        delete temp;
+    }
+}
