@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1648026731 source:d:\nsu\spring 22\cse225l\lab9 - linked list\queue\main.cpp
+	<iostream>
+	"Queue.cpp"
+
+1648026691 source:d:\nsu\spring 22\cse225l\lab9 - linked list\queue\queue.cpp
+	"Queue.h"
+	<iostream>
+
+1648026570 d:\nsu\spring 22\cse225l\lab9 - linked list\queue\queue.h
+
+1648026691 d:\nsu\spring 22\cse225l\lab9 - linked list\queue\queue.cpp
+	"Queue.h"
+	<iostream>
+

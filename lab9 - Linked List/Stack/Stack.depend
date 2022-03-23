@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1648027271 source:d:\nsu\spring 22\cse225l\lab9 - linked list\stack\main.cpp
+	<iostream>
+	"Stack.cpp"
+
+1648027128 source:d:\nsu\spring 22\cse225l\lab9 - linked list\stack\stack.cpp
+	"Stack.h"
+	<iostream>
+
+1648027153 d:\nsu\spring 22\cse225l\lab9 - linked list\stack\stack.h
+
+1648027128 d:\nsu\spring 22\cse225l\lab9 - linked list\stack\stack.cpp
+	"Stack.h"
+	<iostream>
+
