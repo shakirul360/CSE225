@@ -8,6 +8,9 @@ struct node {
 
 };
 
+// find minimum
+// find average
+
 class Linked_List
 {
     public:
@@ -18,6 +21,8 @@ class Linked_List
         void print_list();
         void delete_first();
         void delete_last();
+        int average();
+        int minimum();
 
     private:
         node *head;

@@ -89,3 +89,41 @@ void Linked_List::delete_last(){
         delete temp;
     }
 }
+
+int Linked_List::average(){
+
+    int sum = 0;
+    int count = 0;
+    node *temp = head;
+    while(temp != NULL){
+
+        sum += temp->data;
+        count++;
+        temp = temp->next;
+
+
+    }
+
+    return (sum / count);
+
+}
+
+int Linked_List::minimum(){
+
+    int min = 999999;
+
+    node *temp = head;
+
+    while (temp != NULL){
+
+        if (temp->data < min){
+            min = temp->data;
+        }
+
+        temp = temp->next;
+    }
+
+    return min;
+
+}
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1648294900 source:d:\nsu\spring 22\cse225l\bst\main.cpp
+	<iostream>
+	"BST.h"
+
+1648294958 source:d:\nsu\spring 22\cse225l\bst\bst.cpp
+	"BST.h"
+	<iostream>
+
+1648294872 d:\nsu\spring 22\cse225l\bst\bst.h
+
