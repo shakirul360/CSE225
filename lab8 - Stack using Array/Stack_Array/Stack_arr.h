@@ -1,7 +1,7 @@
 #ifndef STACK_ARR_H
 #define STACK_ARR_H
 
-const int MAX_ITEMS = 5;
+const int MAX_ITEMS = 10;
 
 class EmptyStack{};
 class FullStack{};

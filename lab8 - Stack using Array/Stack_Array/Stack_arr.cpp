@@ -31,7 +31,7 @@ void Stack_arr<T>::push(T item){
         items[top] = item;
 
     } catch (FullStack e){
-        cout << "Stack is full!" << endl;
+        //cout << "Stack is full!" << endl;
     }
 
 }

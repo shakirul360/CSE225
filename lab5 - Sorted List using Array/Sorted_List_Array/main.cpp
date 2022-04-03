@@ -1,36 +1,28 @@
 #include <iostream>
 #include "Sorted_List_arr.cpp"
+#include "Student.h"
 //#include "Timestamp.h"
 
-void print_list(Sorted_List_arr<int> lis);
+void print_list(Sorted_List_arr<Student> lis);
 using namespace std;
 
 int main() {
 
-    Sorted_List_arr<int> l;
+    Sorted_List_arr<Student> students;
+
+    Student s1(1, "A", 100, 100, 100, 100, 100);
+    Student s2(2, "B", 100, 90, 50, 50, 50);
+    Student s3(3, "C", 100, 90, 50, 50, 90);
+    Student s4(4, "D", 100, 90, 50, 50, 100);
+
+    students.insert_item(s1);
+    students.insert_item(s2);
+    students.insert_item(s3);
+    students.insert_item(s4);
 
 
-    l.insert_item(3);
-    l.insert_item(1);
-    l.insert_item(2);
-    l.insert_item(0);
-    l.insert_item(4);
-    l.insert_item(5);
-    print_list(l);
-    //cout << l.length_is() << endl;
 
-    l.delete_item(2);
-    bool flag;
-    int n = 3;
-    l.retrieve_item(n,flag);
-
-    if (flag){
-       cout << "item found" << endl;
-    } else {
-       cout << "item not found" << endl;
-    }
-
-    print_list(l);
+    print_list(students);
 
     cout << "Hello world!" << endl;
     return 0;
@@ -38,12 +30,12 @@ int main() {
 
 
 
-void print_list(Sorted_List_arr<int> lis){
-    int temp;
+void print_list(Sorted_List_arr<Student> lis){
+    Student temp;
 
     for (int i = 0; i < lis.length_is(); i++){
         lis.get_next_item(temp);
-        cout << temp << "\t";
+        temp.print();
     }
     cout << endl;
     lis.reset_list();

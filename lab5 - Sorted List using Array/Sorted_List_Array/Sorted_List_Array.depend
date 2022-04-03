@@ -32,9 +32,10 @@
 1646759351 source:d:\nsu\spring 22\cse225l\lab5\sorted_list_array\timestamp.cpp
 	"Timestamp.h"
 
-1647191766 source:d:\nsu\spring 22\cse225l\lab5 - sorted list using array\sorted_list_array\main.cpp
+1648631707 source:d:\nsu\spring 22\cse225l\lab5 - sorted list using array\sorted_list_array\main.cpp
 	<iostream>
 	"Sorted_List_arr.cpp"
+	"Student.h"
 
 1647191749 d:\nsu\spring 22\cse225l\lab5 - sorted list using array\sorted_list_array\sorted_list_arr.cpp
 	"Sorted_List_arr.h"
@@ -44,5 +45,12 @@
 
 1647191749 source:d:\nsu\spring 22\cse225l\lab5 - sorted list using array\sorted_list_array\sorted_list_arr.cpp
 	"Sorted_List_arr.h"
+	<iostream>
+
+1648631252 d:\nsu\spring 22\cse225l\lab5 - sorted list using array\sorted_list_array\student.h
+	<iostream>
+
+1648631959 source:d:\nsu\spring 22\cse225l\lab5 - sorted list using array\sorted_list_array\student.cpp
+	"Student.h"
 	<iostream>
 

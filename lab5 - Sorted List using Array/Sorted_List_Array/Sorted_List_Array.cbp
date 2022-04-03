@@ -36,6 +36,8 @@
 		</Compiler>
 		<Unit filename="Sorted_List_arr.cpp" />
 		<Unit filename="Sorted_List_arr.h" />
+		<Unit filename="Student.cpp" />
+		<Unit filename="Student.h" />
 		<Unit filename="Timestamp.cpp" />
 		<Unit filename="Timestamp.h" />
 		<Unit filename="main.cpp" />

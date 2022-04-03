@@ -7,75 +7,43 @@ int main() {
 
     Stack_arr<int> s1;
     Stack_arr<int> s2;
+    int k;
+    int idx = 0;
     int arr[10];
-    int a, b;
-
-    int dummy_sum;
-    int s1_size, s2_size, total, counter = 0, val, sum = 0, arr_index = 0;
-
-    bool flaga, flagb;
-
-    cout << "enter size of Stack 1: ";
-    cin >> s1_size;
-    cout << "enter size of Stack 2: ";
-    cin >> s2_size;
-    cout << "enter total value: ";
-    cin >> total;
+    int val;
 
 
-    cout << "Enter values for Stack A: ";
-    for (int i = 0; i < s1_size; i++){
-        cin >> val;
-        s1.push(val);
+    for (int i = 10; i <= 100; i+=10){
+        arr[idx] = i;
+        idx++;
     }
 
-    cout << "Enter values for Stack B: ";
-    for (int i = 0; i < s2_size; i++){
-        cin >> val;
-        s2.push(val);
+    cout << "Enter k:  ";
+    cin >> k;
+
+    for (int i = 0; i < k; i++){
+        s1.push(arr[i]);
     }
 
-
-        while (sum < total){
-
-        a = s1.Top();
-        b = s2.Top();
-
-
-
-        if (a < b){
-            sum += s1.Top();
-            arr[arr_index] = s1.Top();
-            s1.pop();
-
-
-        } else if (b <= a) {
-            sum += s2.Top();
-            arr[arr_index] = s2.Top();
-            s2.pop();
-        }
-
-        if (sum < total){
-            counter++;
-            arr_index++;
-        }
-
+    while (s1.is_Empty() != true){
+        cout << s1.Top() << "\t";
+        s1.pop();
     }
 
-
-
-
-    cout << counter << endl;
-
-    for (int i = 0; i < arr_index; i++){
+    for (int i = k; i < 10; i++){
         cout << arr[i] << "\t";
     }
 
 
 
+    cout << endl;
 
 
-    cout << "Hello world!" << endl;
+
+
+
+
+
     return 0;
 }
 //5 4 10
