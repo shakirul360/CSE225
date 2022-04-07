@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1649366410 source:d:\nsu\spring 22\cse225l\graph_from_scratch\main.cpp
+	<iostream>
+	<queue>
+

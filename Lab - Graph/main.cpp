@@ -26,7 +26,7 @@ void DFS(int source)
 {
     visited[source] = true;
 
-    //cout << source << "\t"; //pre - order
+    cout << source << "\t"; //pre - order
 
     for(int i= 0 ; i < node; i++) {
 
@@ -36,7 +36,7 @@ void DFS(int source)
             }
         }
     }
-    cout << source << "\t"; //post-order
+   // cout << source << "\t"; //post-order
 
 }
 int main()
