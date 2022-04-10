@@ -16,6 +16,7 @@ bool visited[max_size];
 int time[max_size];
 int root_time = 0;
 int parent[max_size];
+void disjoints();
 
 void BFS(int source);
 void initialize();
@@ -28,7 +29,7 @@ int cur;
 
 int main() {
     cin >> nodes >> edges;
-    int disjoints = 0;
+
     for (int i = 0; i < edges; i++){
         cin >> m >> n;
         graph[m][n] = 1;
@@ -47,6 +48,8 @@ int main() {
     BFS(0);
 
     level_print();
+
+    disjoints();
 
     cout << "Hello world!" << endl;
     return 0;
@@ -74,6 +77,18 @@ void DFS(int source) {
     }
     //cout << source << "\t";
 
+}
+
+void disjoints(){
+    initialize();
+    int count = 0;
+    for (int i = 0; i < nodes; i++){
+        if (visited[i] != true){
+            count++;
+            DFS(i);
+        }
+    }
+    cout << count << endl;
 }
 
 void print_parent(){
@@ -156,4 +171,23 @@ void level_print(){
 4 6
 5 6
 3 6
+*/
+
+
+/*
+13 14
+0 1
+0 2
+1 3
+1 5
+2 5
+3 4
+4 5
+4 6
+5 6
+3 6
+7 8
+7 9
+10 11
+10 12
 */
