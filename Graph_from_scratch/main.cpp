@@ -47,9 +47,9 @@ int main() {
 
     BFS(0);
 
-    level_print();
+    //level_print();
 
-    disjoints();
+    //disjoints();
 
     cout << "Hello world!" << endl;
     return 0;
