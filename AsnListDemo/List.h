@@ -22,8 +22,16 @@ class List {
         void RemoveAll(int i);
         void AddAll(List l);
 
+        void AddAsHeadV2(int i);
+        void AddAsTailV2(int i);
+        void Print_tail();
+        void ReverseV2();
+        void AddAllV2(List l);
+
+
     private:
         Node* head;
+        Node *tail;
         //Node* tail; // this is for Part B
 };
 
