@@ -21,13 +21,21 @@ int time[max_size][max_size];
 void print_time();
 int nx, ny;
 
+
+void initialize();
 void BFS(int x, int y);
 int level[max_size][max_size];
 void print_level();
 
 int main() {
+    cout << "BFS" << endl;
     BFS(0,0);
     print_level();
+
+    initialize();
+    cout << "DFS" << endl;
+    DFS(0,0);
+    print_time();
     cout << "Hello World!" << endl;
 }
 
@@ -114,3 +122,13 @@ void print_level(){
         cout << endl;
     }
 }
+
+void initialize(){
+
+    for (int i = 0; i < max_size; i++){
+        for (int j = 0; j < max_size; j++){
+            visited[i][j] = false;
+        }
+    }
+}
+//https://ideone.com/F9tjnp

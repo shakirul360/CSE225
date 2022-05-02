@@ -2,7 +2,7 @@
 #include<queue>
 
 using namespace std;
-const int max_size = 10;
+const int max_size = 13;
 void print();
 void print_parent();
 void print_time();
@@ -13,7 +13,7 @@ int m, n;
 
 void DFS(int source);
 bool visited[max_size];
-int time[max_size];
+int tim[max_size];
 int root_time = 0;
 int parent[max_size];
 void disjoints();
@@ -37,7 +37,7 @@ int main() {
     }
     print();
     cout << endl;
-
+    cout << "initiating DFS---         ";
     DFS(0);
     cout << endl;
 //    print_parent();
@@ -45,11 +45,15 @@ int main() {
 
     initialize();
 
+
+    cout << "initiating BFS---         ";
     BFS(0);
 
-    //level_print();
+    cout << "printing levels----       ";
+    level_print();
 
-    //disjoints();
+    cout << "checking disjoints----    " << endl;
+    disjoints();
 
     cout << "Hello world!" << endl;
     return 0;
@@ -70,7 +74,7 @@ void DFS(int source) {
     cout << source << "\t";
     for (int i = 0; i < nodes; i++){
         if (graph[source][i] == 1 && visited[i] == false) {
-            time[i] = time[source] + 5;
+            tim[i] = tim[source] + 5;
             parent[i] = source;
             DFS(i);
         }
@@ -83,12 +87,16 @@ void disjoints(){
     initialize();
     int count = 0;
     for (int i = 0; i < nodes; i++){
-        if (visited[i] != true){
+        if (visited[i] == false){
+            //cout << "i = "<< i << endl;
             count++;
             DFS(i);
+            cout << endl;
         }
+
     }
-    cout << count << endl;
+
+    cout << "disjoints = " << count << endl;
 }
 
 void print_parent(){
@@ -100,7 +108,7 @@ void print_parent(){
 
 void print_time(){
     for (int i = 0; i < nodes; i++){
-        cout << time[i] << "\t";
+        cout << tim[i] << "\t";
     }
 
 

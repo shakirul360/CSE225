@@ -69,7 +69,8 @@
     }
     int main()
     {
-        BFS(0,0);
+        //BFS(0,0);
+        DFS(1,1);
         for(int i= 0 ; i <8; i++)
         {
             for(int j = 0 ; j<8;j++)

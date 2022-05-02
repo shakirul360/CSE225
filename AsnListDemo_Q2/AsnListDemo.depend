@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1651177271 source:d:\nsu\spring 22\cse225l\asnlistdemo\main.cpp
+	<iostream>
+	"List.h"
+
+1651228217 source:d:\nsu\spring 22\cse225l\asnlistdemo\list.cpp
+	"List.h"
+	<iostream>
+
+1651177529 d:\nsu\spring 22\cse225l\asnlistdemo\list.h
+
+1651228217 source:d:\nsu\spring 22\cse225l\asnlistdemo_q2\list.cpp
+	"List.h"
+	<iostream>
+
+1651177529 d:\nsu\spring 22\cse225l\asnlistdemo_q2\list.h
+
+1651426285 source:d:\nsu\spring 22\cse225l\asnlistdemo_q2\main.cpp
+	<iostream>
+	"List.h"
+

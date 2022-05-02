@@ -4,7 +4,6 @@ using namespace std;
 
 List::List(){
     head = NULL;
-    tail = NULL;
 }
 
 bool List::IsEmpty(){
@@ -190,95 +189,4 @@ void List::AddAll(List l){
     }
 
 
-}
-
-
-void List::AddAsHeadV2(int i){
-
-    //check full
-
-    Node *temp = new Node;
-    temp->val = i;
-    temp->next = NULL;
-
-    if (head == NULL){
-        head = temp;
-        tail = temp; //modification
-    } else {
-        temp->next = head;
-        head = temp;
-    }
-}
-
-
-void List::AddAsTailV2(int i){
-
-    // check full
-
-    Node *temp = new Node;
-    temp->val = i;
-    temp->next = NULL;
-
-    Node *cur_node = head;
-
-    while(cur_node->next != NULL){
-        cur_node = cur_node->next;
-    }
-
-    cur_node->next = temp;
-    tail = temp;    //modification
-
-}
-
-
-void List::Print_tail(){
-    if (tail == NULL)
-        return;
-    cout << tail->val << endl;
-}
-
-
-void List::ReverseV2(){
-    if (head != NULL && head->next != NULL){
-        Node *second, *first, *temp;
-
-        second = head;
-        tail = head;
-        first = NULL;
-        temp = NULL;
-
-
-        while (second != NULL){
-            temp = second->next;
-            second->next = first;
-            //cout << "second = " << second->val << endl;
-            first = second;
-            //cout <<  "second = " << second->val << " first = " << second->next->val << endl;
-            second = temp;
-        }
-
-        head = first;
-        cout << "head = " << head->val << endl;
-        cout << "tail = " << tail->val << endl;
-
-
-    }
-}
-
-
-void List::AddAllV2(List l){
-    Node *cur = head, *cur2 = l.head;
-
-    if (head == NULL){
-        head = cur2;
-    } else {
-        while (cur->next != NULL){
-            cur = cur->next;
-        }
-        cur->next = cur2;
-    }
-    tail = cur->next;
-    while (tail->next != NULL){
-        tail = tail->next;
-    }
 }

@@ -15,26 +15,38 @@ void pre_order(node* root);
 void post_order(node* root);
 node* find_min(node* root);
 node* find_max(node* root);
+node* Delete(node *root, int val);
 
 int main() {
 
     node *root = NULL;
 
-    root= insert(root, 25);
-    root= insert(root, 15);
-    root= insert(root, 10);
-    root= insert(root, 20);
-    root= insert(root, 50);
-    root= insert(root, 40);
-    root= insert(root, 60);
+    root = insert(root, 25);
+    root = insert(root, 15);
+    root = insert(root, 10);
+    root = insert(root, 20);
+    root = insert(root, 50);
+    root = insert(root, 40);
+    root = insert(root, 60);
+    root = insert(root, 70);
+    cout << "pre-order - ";
     pre_order(root);
     cout<<endl;
+    cout << "in-order - ";
     in_order(root);
     cout<<endl;
+    cout << "post-order -";
     post_order(root);
     cout<<endl;
     find_min(root);
     find_max(root);
+
+    cout << "Deleting 50..." << endl;
+    Delete(root, 50);
+    pre_order(root);
+    cout << endl;
+    in_order(root);
+
 
     cout << "Hello world!" << endl;
     return 0;
@@ -46,6 +58,8 @@ node* NewNode(int item){
     temp->data = item;
     temp->left = NULL;
     temp->right = NULL;
+
+    return temp;
 }
 
 node* insert(node * root, int item){
@@ -97,7 +111,7 @@ node* find_min(node* root){
     while (root->left != NULL){
         root = root->left;
     }
-    cout << root->data << endl;
+    cout << "Minimum from root = " << root->data << endl;
     return root;
 }
 
@@ -106,6 +120,46 @@ node* find_max(node* root){
     while (root->right != NULL){
         root = root->right;
     }
-    cout << root->data << endl;
+    cout << "Maximum from root = " << root->data << endl;
+    return root;
+}
+
+node* Delete(node *root, int val){
+
+    node* temp;
+
+    if (root == NULL){
+        return root;
+
+    } else if (root->data < val){
+        root->right = Delete(root->right, val);
+
+    } else if (root->data > val){
+        root->left = Delete(root->left, val);
+
+    } else {
+
+        if (root->left == NULL && root->right == NULL){
+            delete root;
+            root = NULL;
+
+        } else if (root->left != NULL && root->right == NULL){
+             temp = root;
+             root = root->left;
+             delete temp;
+
+        } else if (root->left == NULL && root->right != NULL){
+            temp = root;
+            root = root->right;
+            delete temp;
+
+        } else {
+            temp = find_max(root->left);     // could have also used the right subtree to find minimum
+            // temp = find_min(root->right);
+            root->data = temp->data;
+            root->left = Delete(root->left, temp->data);
+            //root->right = Delete(root->right, temp->data);
+        }
+    }
     return root;
 }

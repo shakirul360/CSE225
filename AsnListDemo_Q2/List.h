@@ -24,7 +24,7 @@ class List {
 
         void AddAsHeadV2(int i);
         void AddAsTailV2(int i);
-        void Print_tail();
+        void Print_tail();       //helper method
         void ReverseV2();
         void AddAllV2(List l);
 
