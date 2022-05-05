@@ -31,6 +31,7 @@ int main(){
         //cout << line << endl;
 
         while (ss >> word){
+            //cout << word << endl;
             word.erase(std::remove(word.begin(), word.end(), ','), word.end());
 
             std::for_each(word.begin(), word.end(), [](char & c) {
@@ -64,8 +65,8 @@ int main(){
 
 
     input_file.close();
-    cout << sentence_count << endl;
-    cout << word_count << endl;
+    cout << "Sentences in essay - " << sentence_count << endl;
+    cout << "Unique words in essay - "<< word_count << endl;
 
     ofstream myfile;
     myfile.open("output.txt");
