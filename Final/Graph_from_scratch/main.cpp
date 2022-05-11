@@ -22,6 +22,8 @@ void BFS(int source);
 void initialize();
 int level[max_size];
 void level_print();
+int parent2[max_size];
+void print_parent2();
 
 int cur;
 
@@ -55,6 +57,8 @@ int main() {
     cout << "checking disjoints----    " << endl;
     disjoints();
 
+    print_parent2();
+
     cout << "Hello world!" << endl;
     return 0;
 }
@@ -72,6 +76,7 @@ void DFS(int source) {
     visited[source] = true;
 
     cout << source << "\t";
+    //pre
     for (int i = 0; i < nodes; i++){
         if (graph[source][i] == 1 && visited[i] == false) {
             tim[i] = tim[source] + 5;
@@ -80,6 +85,7 @@ void DFS(int source) {
         }
     }
     //cout << source << "\t";
+    //post
 
 }
 
@@ -137,10 +143,12 @@ void BFS(int source) {
                     level[i] = level[cur] + 1;
                     visited[i] = true;
                     q.push(i);
+                    parent2[i] = cur;
                 }
             }
         }
     }
+
     cout << endl;
 }
 
@@ -149,6 +157,13 @@ void level_print(){
         cout << level[i] << "\t";
     }
 
+    cout << endl;
+}
+
+void print_parent2(){
+    for (int i = 0; i< nodes; i++){
+        cout << i << " parent = " << parent2[i] << endl;
+    }
     cout << endl;
 }
 

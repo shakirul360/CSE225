@@ -1,5 +1,5 @@
 #include <iostream>
-//insert, traversals, find_min, find_max
+//insert, traversals, find_min, find_max, delete
 
 using namespace std;
 struct node {
@@ -9,6 +9,9 @@ struct node {
 };
 node* NewNode(int item);
 node* insert(node * root, int item);
+bool root_arr[8];
+int i = 0;
+int arr[8];
 
 void in_order(node* root);
 void pre_order(node* root);
@@ -29,23 +32,42 @@ int main() {
     root = insert(root, 40);
     root = insert(root, 60);
     root = insert(root, 70);
-    cout << "pre-order - ";
-    pre_order(root);
-    cout<<endl;
-    cout << "in-order - ";
-    in_order(root);
-    cout<<endl;
-    cout << "post-order -";
-    post_order(root);
-    cout<<endl;
-    find_min(root);
-    find_max(root);
+//    cout << "pre-order - ";
+//    pre_order(root);
+//    cout<<endl;
+//    cout << "in-order - ";
+//    in_order(root);
+//    cout<<endl;
+//    cout << "post-order -";
+//    post_order(root);
+//    cout<<endl;
+//    find_min(root);
+//    find_max(root);
+//
+//    cout << "Deleting 50..." << endl;
+//    Delete(root, 50);
+//    pre_order(root);
+//    cout << endl;
+//    in_order(root);
 
-    cout << "Deleting 50..." << endl;
-    Delete(root, 50);
-    pre_order(root);
-    cout << endl;
     in_order(root);
+    for (int i = 0; i < 8; i++){
+        cout << arr[i] << "\t";
+    }
+
+    int x;
+    cout << endl;
+    cout << "Enter nth largest value to find: ";
+    cin >> x;
+    cout << arr[8 - x] << endl;
+
+    if (root_arr[8 - x] == 1){
+        cout << "it is a leaf node" << endl;
+    } else {
+        cout << "it is not a leaf node" << endl;
+    }
+
+
 
 
     cout << "Hello world!" << endl;
@@ -80,8 +102,13 @@ void in_order(node* root){
     if (root == NULL){
         return;
     }
+    if (root->right == NULL && root->left == NULL){
+        root_arr[i] = 1;
+    }
     in_order(root->left);
-    cout << root->data << " ";
+    //cout << root->data << " ";
+    arr[i] = root->data;
+    i++;
     in_order(root->right);
 }
 
